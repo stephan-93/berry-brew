@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Salmela';
+    src: url('Salmela.eot');
+    src: url('Salmela.eot') format('embedded-opentype'),
+         url('Salmela.woff2') format('woff2'),
+         url('Salmela.woff') format('woff'),
+         url('Salmela.ttf') format('truetype'),
+         url('Salmela.svg#Salmela') format('svg');
+}
