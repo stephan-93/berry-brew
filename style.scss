@@ -95,6 +95,7 @@ em {
   font-family: $salmela;
   bottom: .15em;
   color: #FDB73C;
+  font-style: normal;
 }
 
 .title {
@@ -158,7 +159,7 @@ a[type=button], button.round, .lSAction a{
 }
 .lSAction {
   position: absolute;
-  left: 0; right: 0; top: calc(50% - 4em); bottom: 0;
+  left: calc(-4% - 1em); right: calc(-4% - 1em); top: calc(50% - 4em); bottom: 0;
   margin: auto auto;
 }
 
@@ -345,7 +346,7 @@ header.site-header {
   }
 }
 .list-waraper {
-  width: 100%;
+  width: 95%;
   margin: auto;
   @media #{$break-small} and #{$break-narrow} {
     width: 100%;
@@ -384,6 +385,7 @@ ul.product-list {
     img {
       align-self: center;
       max-height: 650px;
+      padding-bottom: .75em;
       filter: drop-shadow(2px 8px 5px rgba(0, 0, 0, 0.1));
       @media #{$break-small} {
         max-height: 500px;

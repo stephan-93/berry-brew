@@ -78,7 +78,8 @@ p {
 em {
   font-family: "salmela", cursive;
   bottom: .15em;
-  color: #FDB73C; }
+  color: #FDB73C;
+  font-style: normal; }
 
 .title {
   display: block;
@@ -136,8 +137,8 @@ a[type=button], button.round, .lSAction a {
 
 .lSAction {
   position: absolute;
-  left: 0;
-  right: 0;
+  left: calc(-4% - 1em);
+  right: calc(-4% - 1em);
   top: calc(50% - 4em);
   bottom: 0;
   margin: auto auto; }
@@ -315,7 +316,7 @@ header.site-header {
   width: 92%; }
 
 .list-waraper {
-  width: 100%;
+  width: 95%;
   margin: auto; }
   @media only screen and (max-width: 767px) and (orientation: portrait) {
     .list-waraper {
@@ -362,6 +363,7 @@ ul.product-list li {
     -ms-flex-item-align: center;
     align-self: center;
     max-height: 650px;
+    padding-bottom: .75em;
     -webkit-filter: drop-shadow(2px 8px 5px rgba(0, 0, 0, 0.1));
     filter: drop-shadow(2px 8px 5px rgba(0, 0, 0, 0.1)); }
     @media only screen and (max-width: 767px) {

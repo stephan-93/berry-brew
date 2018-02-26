@@ -16,39 +16,7 @@ $(document).ready(function() {
       }],
       onSliderLoad: function() {
           $('.product-list').removeClass('cS-hidden');
+          $('.lSAction').appendTo('.list-waraper');
       }
     });
 });
-
-
-/*$(function() {
-  $('.product-list').slick({
-    slidesToShow: 1,
-    infiniti: true;
-    centerMode: true;
-    responsive: [
-    {
-      breakpoint: 375,
-      settings: {
-        slidesToShow: 2,
-        variableWidth: true;
-      }
-    },
-    {
-      breakpoint: 769,
-      settings: {
-        slidesToShow: 4,
-      }
-    },
-    {
-      breakpoint: 1025,
-      settings: {
-        slidesToShow: 5,
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
-  });
-});*/
