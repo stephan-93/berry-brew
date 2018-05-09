@@ -177,6 +177,7 @@ body {
   padding: 0 4%;
   &.full {
     width: 92%;
+    max-width: 92%;
   }
 }
 
@@ -349,21 +350,27 @@ header.site-header {
   width: 95%;
   margin: auto;
   @media #{$break-small} and #{$break-narrow} {
-    width: 100%;
+    width: 80%;
+    .lSAction {
+      left: -20%; right: -20%;
+    }
     a[type=button], button.round, .lSAction a{
       background: none;
     }
     &:before {
       content: "";
-      width: 110%;
+      width: 150%;
+      max-width: 550px;
       height: 0;
-      padding-top: 110%;
+      padding-top: 150%;
       position: absolute;
-      margin: auto -4%;
-      top: 0; bottom: 0; left: 0; right: 0;
+      margin: auto;
+      transform: translateX(-2%);
+      top: -10%; bottom: 0; left: -20%; right: -20%;
       background: url("img/circle-bg.png");
+      background-repeat: no-repeat;
       background-size: contain;
-      background-position: left center;
+      background-position: left top;
     }
   }
 }

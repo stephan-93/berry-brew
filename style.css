@@ -155,7 +155,8 @@ body {
   margin: 0 auto;
   padding: 0 4%; }
   .container.full {
-    width: 92%; }
+    width: 92%;
+    max-width: 92%; }
 
 section {
   display: -webkit-box;
@@ -320,23 +321,31 @@ header.site-header {
   margin: auto; }
   @media only screen and (max-width: 767px) and (orientation: portrait) {
     .list-waraper {
-      width: 100%; }
+      width: 80%; }
+      .list-waraper .lSAction {
+        left: -20%;
+        right: -20%; }
       .list-waraper a[type=button], .list-waraper button.round, .list-waraper .lSAction a {
         background: none; }
       .list-waraper:before {
         content: "";
-        width: 110%;
+        width: 150%;
+        max-width: 550px;
         height: 0;
-        padding-top: 110%;
+        padding-top: 150%;
         position: absolute;
-        margin: auto -4%;
-        top: 0;
+        margin: auto;
+        -webkit-transform: translateX(-2%);
+        -ms-transform: translateX(-2%);
+        transform: translateX(-2%);
+        top: -10%;
         bottom: 0;
-        left: 0;
-        right: 0;
+        left: -20%;
+        right: -20%;
         background: url("img/circle-bg.png");
+        background-repeat: no-repeat;
         background-size: contain;
-        background-position: left center; } }
+        background-position: left top; } }
 
 ul.product-list .cS-hidden {
   height: 1px;
